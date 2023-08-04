@@ -1,0 +1,55 @@
+Hi, welcome to the ray tracing and black hole repository.
+
+There are 5 main types of routines. Below are the divisions and which files are used for which routines. In all cases, the C++ file is used for ray integration, and the python files are used for plotting.
+
+1. Single Particle/Photon Schwarzschild Tracing
+
+files:
+
+schwarz_particle.cpp
+schwarz_photon.cpp
+schwarz_analytical_single_diagrams.py
+
+2. Single Particle/Photon Kerr Tracing
+
+files:
+
+kerr_analytical_particle.cpp
+kerr_analytical_photon.cpp
+kerr_analytical_single_diagrams.py
+
+3. Analytical Kerr Shadows
+
+files:
+
+kerr_analytical_shadow.cpp
+kerr_analytical_shadow.py
+
+4. Spline Kerr Shadows
+
+This makes its own data and interpolates it.
+
+files:
+
+kerr_spline_shadow.cpp
+kerr_spline_shadow.py
+
+5. Modified Kerr Shadows
+
+files:
+
+modified_kerr_shadow_fast.cpp
+modified_kerr_shadow.py
+kerr_rh=0.0359508947168857_omh=0.956.txt
+
+The last is a data file, made by Dr. Lucas Collodel for the cloud case/zero scalar hair case, with accuracy on the order of 10^-4-10^-3.
+
+The columns are arranged as x,th,f0,f1,f2,w. x is the compactified radial coordinate. There are 120 x values for every one of the 30 theta values.
+
+The format is similar to the files produced by Cunha et al. on their website http://gravitation.web.ua.pt/node/416 
+
+Note that they order the values differently and use a different line element. For them, w = Wr.
+
+
+
+
