@@ -2,6 +2,8 @@ Hi, welcome to the ray tracing and black hole repository.
 
 There are 5 main types of routines. Below are the divisions and which files are used for which routines. In all cases, the C++ file is used for ray integration, and the python files are used for plotting.
 
+It is required to create the data files using the C++ files before using the python file for plotting. The filename is the first variable to modify in each python file.
+
 1. Single Particle/Photon Schwarzschild Tracing
 
 files:
@@ -48,7 +50,9 @@ The columns are arranged as x,th,f0,f1,f2,w. x is the compactified radial coordi
 
 The format is similar to the files produced by Cunha et al. on their website http://gravitation.web.ua.pt/node/416 
 
-Note that they order the values differently and use a different line element. For them, w = Wr.
+Note that they order the values differently and use a different line element. For them, w = Wr. 
+
+
 
 
 
